@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Form</title>
+    <link rel="stylesheet" href="../css/form_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <section>
+        <div class="register-form">
+            <form>
+                <div class="input-group header-group">
+                    <h1>Sign up</h1>
+                    <span>Create your account</span>
+                </div>
+                <div class="input-group email-group">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" class="email" id="email" placeholder="Enter your email">
+                    <span class="error"></span>
+                </div>
+                <div class="input-group role-group">
+                    <label for="role">Role</label>
+                    <input type="text" name="role" class="role" id="role" placeholder="Enter your role">
+                    <span class="error"></span>
+                </div>
+                <div class="input-group password-group">
+                    <label for="password">password</label>
+                    <input type="password" name="password" class="password" id="password" placeholder="Enter your password">
+                    <span class="error"></span>
+                    <div id="info">
+                        <div class="pwd-info">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 28 28">
+                                <path fill="currentColor" d="M15 8a1 1 0 1 1-2 0a1 1 0 0 1 2 0Zm-1.75 3.75v7.5a.75.75 0 0 0 1.5 0v-7.5a.75.75 0 0 0-1.5 0ZM2 14C2 7.373 7.373 2 14 2s12 5.373 12 12s-5.373 12-12 12S2 20.627 2 14ZM14 3.5C8.201 3.5 3.5 8.201 3.5 14S8.201 24.5 14 24.5S24.5 19.799 24.5 14S19.799 3.5 14 3.5Z"/>
+                            </svg>
+                            <div class="strong-pwd">
+                                <h4>Create strong passwords</h4>
+                                <ul>
+                                    <li>min 6 & max 16 char</li>
+                                    <li>min 1 lowercase</li>
+                                    <li>min 1 uppercase</li>
+                                    <li>min 1 number</li>
+                                    <li>min 1 special char</li>
+                                </ul>
+                                 <div class="des"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group signup-group">
+                    <input type="submit" class="signup" id="signup" value="Sign up">
+                    <span class="res error">Invalid credentials</span>
+                </div>
+                <div class="input-group signin-group">
+                    <span>Already have an account? <a href="./login_form.html">Sign in</a> </span>
+                </div>
+            </form>
+
+        </div>
+        <div class="side-logo">
+            <div class="circle"></div>
+            <div class="blur"></div>
+        </div>
+    </section>
+    <script src="../js/register_form_validation.js"></script>
+</body>
+</html>
